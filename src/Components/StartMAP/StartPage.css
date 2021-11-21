@@ -1,17 +1,17 @@
 #StartPage {
   background: #00b0e7;
 }
-body .container {
+.container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(600px, auto);
-
+  grid-auto-rows: minmax(650px, auto);
   padding-top: 60px;
 }
 
 .AboutShort {
   background: #00b0e7;
   margin: 0 auto;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: end;
@@ -68,6 +68,29 @@ body .container {
     margin-top: 2rem;
     gap: 2rem;
     transition: 0.3s all ease-in-out;
+  }
+
+  .AboutShort {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "IMGoktay IMGoktay IMGoktay"
+      "Presentation presentation presentation";
+  }
+
+  .IMGoktay {
+    grid-area: IMGoktay;
+  }
+  .Presentation {
+    grid-area: Presentation;
+    grid-column: 2/3;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Presentation p {
+    text-align: center;
   }
 
   body {

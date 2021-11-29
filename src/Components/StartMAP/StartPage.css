@@ -1,6 +1,11 @@
 #StartPage {
   background: #00b0e7;
 }
+*,
+*::before,
+*::after {
+  border-style: box-sizing;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -49,7 +54,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 0 auto;
   margin-top: 2rem;
-  gap: 5rem;
+  gap: 20px;
   transition: 0.3s all ease-in-out;
 }
 .Social .git:hover {

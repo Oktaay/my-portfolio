@@ -18,11 +18,12 @@ body {
 }
 
 header {
-  background: #00b0e7;
+  background: #000;
+
+  /* background: #00b0e7; */
   text-align: center; /*center the text in header*/
   position: fixed; /*sticks the header on the browser*/
   /* z-index: 100; */
-  border: 1px solid #018ab4;
   width: 100%; /*stretch*/
 }
 
@@ -38,8 +39,7 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background: #00b0e7;
-
+  background: #000;
   width: 100%;
   transform-origin: top;
   transform: scale(1, 0);

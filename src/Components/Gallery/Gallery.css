@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery-Grid-Container {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr 1fr 1fr 1.1fr;
+
+  grid-template-rows: auto auto auto;
+  background: black;
+
+  column-gap: 20px;
+  row-gap: 20px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.gallery-Grid-Container h1 {
+  grid-column: 2/6;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  color: #fff;
+}
+
+/*Fredrik*/
+.LeftImage {
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+
+/*Bea liten*/
+.MiddleLeftImage {
+  grid-column: 5/6;
+  grid-row: 2/3;
+}
+
+/*Tupac*/
+.MiddleRightImage {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+/*Bea Yxa*/
+.RightImage {
+  grid-column: 4/5;
+  grid-row: 2/4;
+}
+
+/*Basil*/
+.MiddleRight {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  align-self: baseline;
+}
+/*Liten Fredrik*/
+.Last {
+  grid-column: 4/5;
+  grid-row: 3/4;
+  align-self: flex-end;
+}
+
+/*Indian*/
+.MiddleLeft {
+  grid-column: 5/6;
+  grid-row: 3/4;
+  align-self: baseline;
+}
+
+.bild1 {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.bild2 {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.bild3 {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.bild4 {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.bild5 {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.bild6 {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.bild7 {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ____LOGO______ */
+
+@media screen and (max-width: 2080px) {
+  .gallery-Grid-Container {
+    grid-template-columns: 0.4fr 1fr 1fr 1fr 0.4fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  .gallery-Grid-Container h1 {
+    text-align: center;
+    grid-column: 2/5;
+  }
+  .MiddleLeftImage {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  .MiddleLeft {
+    grid-column: 4/5;
+    grid-row: 4/5;
+    align-self: baseline;
+  }
+  .Last {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .gallery-Grid-Container {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  .gallery-Grid-Container h1 {
+    grid-column: 2/4;
+  }
+  /*Tupac*/
+  .MiddleRightImage {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+
+  /*Bea Yxa*/
+  .RightImage {
+    grid-area: img4;
+  }
+
+  /*Basil*/
+  .MiddleRight {
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
+
+  /*Indian*/
+  .MiddleLeft {
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
+
+  /*Bea Yxa*/
+  .RightImage {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+  .Last {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    align-self: baseline;
+  }
+}
+
+@media screen and (max-width: 1046px) {
+  .gallery-Grid-Container {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+  }
+  .gallery-Grid-Container h1 {
+    grid-column: 2/3;
+  }
+  /*****1046***/
+  /*Indian*/
+  .MiddleLeft {
+    grid-column: 2/3;
+    grid-row: 9/10;
+  }
+
+  /*Basil*/
+  .MiddleRight {
+    grid-column: 2/3;
+    grid-row: 8/9;
+  }
+
+  /*Tupac*/
+  .MiddleRightImage {
+    grid-column: 2/3;
+    grid-row: 7/8;
+  }
+
+  /*Bea liten*/
+  .MiddleLeftImage {
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+
+  /*Bea Yxa*/
+  .RightImage {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    align-self: flex-start;
+  }
+  .Last {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    align-self: flex-start;
+  }
+}

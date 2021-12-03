@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../NavbarMAP/Navbar.css";
 import burger from "../FontAndImages/images/hamburger.png";
 import "../FontAndImages/fonts/simple.ttf";
+import MyPDF from "../FontAndImages/PDF/OktayCV.pdf";
 
 const Navbar = () => {
   return (
@@ -17,7 +18,12 @@ const Navbar = () => {
             <a href="">Vem är jag</a>
           </li>
           <li className="items">
-            <a href="">cv</a>
+            <a href="">project</a>
+          </li>
+          <li className="items">
+            <a href={MyPDF} download="My_CV_OKTAY.pdf">
+              cv
+            </a>
           </li>
           <li className="items">
             <a href="">Kontakt</a>

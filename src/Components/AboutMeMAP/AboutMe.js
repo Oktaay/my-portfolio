@@ -20,8 +20,8 @@ function AboutMe() {
         <div className="ommig">
           <h1>VEM ÄR JAG</h1>
           <p>
-            Hej! Oktay Aliyev heter jag, är 28 år gammal uppväxt i Sundsvall och
-            bor sedan 10 år tillbaka i Hufvudstaden Stockholm med min sambo Bea.
+            Hej! Oktay heter jag, är 28 år gammal uppväxt i Sundsvall och bor
+            sedan 10 år tillbaka i Hufvudstaden Stockholm med min sambo Bea.
           </p>
 
           <p>
@@ -84,17 +84,6 @@ function AboutMe() {
         </div>
       </div>
     </section>
-
-    // <div className="container-class">
-    //   <div className="grid-container">
-
-    //     {/* -----KOMPETENSER------ */}
-    //     <div className="kompetens">
-    //
-    //     </div>
-    //     {/* ------SPRÅK------ */}
-    //
-    // </div>
   );
 }
 

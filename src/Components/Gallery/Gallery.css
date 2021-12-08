@@ -82,7 +82,10 @@
   justify-content: center;
   align-content: center;
 }
-
+.text:hover {
+  opacity: 0.7;
+  background: crimson;
+}
 /***************************************************************/
 /*Bea liten*/
 .MiddleLeftImage {

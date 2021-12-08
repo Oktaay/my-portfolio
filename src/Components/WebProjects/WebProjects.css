@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.web-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". text text text text ."
+    " . o d g k .";
+  column-gap: 20px;
+  row-gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.web-grid-container h1 {
+  grid-area: text;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  color: #000;
+}
+/***********************/
+
+.Dyren {
+  grid-area: d;
+  justify-self: center;
+  transition: transform 0.2s;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 50px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.dyren-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.Dyren:hover .dyren-img {
+  opacity: 0.3;
+}
+
+.knapp {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+
+.Dyren:hover .knapp {
+  opacity: 1;
+}
+
+.knapp-text {
+  display: grid;
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #fff;
+
+  justify-content: center;
+  align-content: center;
+}
+
+/***************************/
+.Group {
+  grid-area: g;
+  justify-self: center;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 50px 0 rgba(0, 0, 0, 0.3);
+}
+.group-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*****************************/
+
+.Oktayink {
+  grid-area: o;
+  justify-self: flex-end;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 50px 0 rgba(0, 0, 0, 0.3);
+}
+.oktay-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/***************************/
+.Kyndia {
+  grid-area: k;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 50px 0 rgba(0, 0, 0, 0.3);
+}
+.kyndia-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*****************************/
+
+/********************************/

@@ -39,7 +39,8 @@
   grid-column: 3/4;
   grid-row: 1/2;
   background: #000;
-  /* background: linear-gradient(#00b0e7, #2a4494); */
+  box-shadow: 0 10px 8px 0 rgba(63, 53, 53, 0.3),
+    0 6px 50px 0 rgba(0, 0, 0, 0.3);
   border-radius: 25px;
   display: grid;
   justify-content: center;
@@ -47,10 +48,7 @@
   max-height: 400px;
   color: #fff;
 }
-.kompetens1:hover {
-  box-shadow: 10px 10px 5px grey;
-  transition: 0.3s all ease-in-out;
-}
+
 .it {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -105,10 +103,8 @@
   align-content: center;
   max-height: 400px;
   color: #fff;
-}
-.kompetens2:hover {
-  box-shadow: 10px 10px 5px grey;
-  transition: 0.3s all ease-in-out;
+  box-shadow: 0 10px 8px 0 rgba(63, 53, 53, 0.3),
+    0 6px 50px 0 rgba(0, 0, 0, 0.3);
 }
 
 .ui {
